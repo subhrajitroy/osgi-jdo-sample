@@ -8,10 +8,10 @@
         <class>org.datanucleus.samples.jpa.osgi.Person</class>
         <exclude-unlisted-classes />
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:nucleus"/>
-            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
-            <property name="javax.persistence.jdbc.user" value="sa"/>
-            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/motech"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="admin"/>
+            <property name="javax.persistence.jdbc.password" value="bobbins"/>
 
             <property name="datanucleus.autoCreateSchema" value="true"/>
             <property name="datanucleus.autoCreateColumns" value="true"/>
