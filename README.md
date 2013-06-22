@@ -18,6 +18,7 @@ sample-jpa-osgi
     These will then be automatically installed/started
 
 4. If you do a "list" in the karaf console you will now get something like
+
     karaf@root> list
     START LEVEL 100 , List Threshold: 50
        ID   State         Blueprint      Level  Name
