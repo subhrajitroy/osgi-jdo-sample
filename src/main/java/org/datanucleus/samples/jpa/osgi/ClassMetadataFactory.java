@@ -8,7 +8,7 @@ import javax.jdo.metadata.FieldMetadata;
 import javax.jdo.metadata.JDOMetadata;
 import javax.jdo.metadata.PackageMetadata;
 
-class BookMetadataFactory implements MetadataFactory {
+class ClassMetadataFactory implements MetadataFactory {
 
     public JDOMetadata populate(JDOMetadata md, String fullyQualifiedClassName, String fieldName) {
         String packageName = fullyQualifiedClassName.substring(0, fullyQualifiedClassName.lastIndexOf("."));

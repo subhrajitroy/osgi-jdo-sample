@@ -17,6 +17,7 @@
  **********************************************************************/
 package org.datanucleus.samples.jpa.osgi;
 
+import org.datanucleus.samples.jpa.osgi.domain.Patient;
 import org.datanucleus.util.NucleusLogger;
 
 import javax.persistence.EntityManager;
@@ -66,9 +67,9 @@ public class JpaMain {
         EntityTransaction tx = em.getTransaction();
         try {
             tx.begin();
-            Person p;
+            Patient p;
             for (int i = 0; i < MAX_NUM_ITERATIONS; i++) {
-                p = new Person(i, "Name" + i, "Address" + i, 20 + i);
+                p = new Patient(i, "Name" + i, "Address" + i, 20 + i);
                 em.persist(p);
             }
             tx.commit();

@@ -9,18 +9,17 @@ import javassist.NotFoundException;
 import org.datanucleus.samples.jpa.osgi.builder.ClassBuilder;
 import org.datanucleus.samples.jpa.osgi.builder.Field;
 import org.datanucleus.samples.jpa.osgi.enhancer.MotechJDOEnhancer;
+import org.datanucleus.samples.jpa.osgi.factory.PersistenceManagerFactoryFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import javax.jdo.JDOEnhancer;
-import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
 import javax.jdo.Query;
 import javax.jdo.Transaction;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 import java.util.UUID;
@@ -31,10 +30,10 @@ public class EntityService {
 
     private ClassLoader classLoader;
 
+    @Autowired
+    private PersistenceManagerFactoryFactory persistenceManagerFactoryFactory;
+
     public static void main(String[] args) throws Exception {
-//        createEntity("foo.Epic", "name");
-
-
         // define extension class for Publisher dynamically
         //byte[] publisherBytes = definePublisherExt(enhanceCl);
         // define jdo metadata for Publisher Extension programatically
@@ -59,45 +58,41 @@ public class EntityService {
     }
 
 
-    public void createEntity(String className, String fieldName) throws IOException, CannotCompileException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+    public void createEntity(String fullyQualifiedClassName, String fieldName) throws IOException, CannotCompileException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
         // used while enhancing
 
-        JdoClassLoader enhanceCl = new JdoClassLoader(getContextClassLoader());
-        // has enhanced classes, used while persisting
-        JdoClassLoader persistCl = new JdoClassLoader(getContextClassLoader());
+        ClassLoader webAppClassLoader = Thread.currentThread().getContextClassLoader();
 
-        Properties properties = getProperties();
-        // use separate classloader for persistence objects
-        properties.put("datanucleus.primaryClassLoader", persistCl);
-        PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory(new HashMap(properties));
+        Thread.currentThread().setContextClassLoader(EntityService.class.getClassLoader());
+
+        JdoClassLoader classLoaderForEnhancer = new JdoClassLoader(getClassLoader());
+        // has enhanced classes, used while persisting
+        JdoClassLoader classLoaderForPersistence = new JdoClassLoader(getClassLoader());
+
+        PersistenceManagerFactory persistenceManagerFactory = persistenceManagerFactoryFactory.getPersistenceManagerFactory(classLoaderForPersistence);
 
         // define Book class dynamically
-        byte[] bookBytes = defineClass(enhanceCl, className, fieldName);
+        byte[] customClassBytes = defineClass(classLoaderForEnhancer, fullyQualifiedClassName, fieldName);
         // define jdo metadata for Book programatically
-        BookMetadataFactory bookMdf = new BookMetadataFactory();
+        ClassMetadataFactory classMetaDataFactory = new ClassMetadataFactory();
         // enchance Book at runtime
-        byte[] enhancedBytes = enhance(className, fieldName, bookBytes, bookMdf, enhanceCl);
+        byte[] enhancedBytes = enhance(fullyQualifiedClassName, fieldName, customClassBytes, classMetaDataFactory, classLoaderForEnhancer);
         // define enhanced Book in new classloader
-        persistCl.defineClass(className, enhancedBytes);
+        classLoaderForPersistence.defineClass(fullyQualifiedClassName, enhancedBytes);
         // register Book metadata with Book
-        register(pmf, bookMdf, className, fieldName);
+        persistenceManagerFactory.registerMetadata(classMetaDataFactory.populate(persistenceManagerFactory.newMetadata(), fullyQualifiedClassName, fieldName));
 
         // sample Book insert
-        Class bookClass = persistCl.loadClass(className);
+        Class bookClass = classLoaderForPersistence.loadClass(fullyQualifiedClassName);
         Object book = bookClass.getDeclaredConstructor(String.class).newInstance(UUID.randomUUID().toString());
-        insert(pmf, book);
+        insertIntoDb(persistenceManagerFactory, book);
+
+        Thread.currentThread().setContextClassLoader(webAppClassLoader);
     }
 
-    @PostConstruct
-    private void setClassLoader() throws Exception {
-        classLoader = Thread.currentThread().getContextClassLoader();
-        createEntity("com.motech.Foo", "bar");
-        System.out.println("Set class loader " + classLoader.toString());
-    }
 
-    private ClassLoader getContextClassLoader() {
-        System.out.println(classLoader.toString());
-        return classLoader;
+    private ClassLoader getClassLoader() {
+        return Thread.currentThread().getContextClassLoader();
     }
 
     private static Properties getProperties() throws IOException {
@@ -147,17 +142,11 @@ public class EntityService {
         return enhancer.getEnhancedBytes(fullyQualifiedClassName);
     }
 
-    private static void register(PersistenceManagerFactory pmf, MetadataFactory mdf, String className, String fieldName) {
-        pmf.registerMetadata(mdf.populate(pmf.newMetadata(), className, fieldName));
-    }
-
-    private static void insert(PersistenceManagerFactory pmf, Object o) {
-        PersistenceManager pm = pmf.getPersistenceManager();
+    private static void insertIntoDb(PersistenceManagerFactory persistenceManagerFactory, Object objectToSave) {
+        PersistenceManager pm = persistenceManagerFactory.getPersistenceManager();
         Transaction tx = pm.currentTransaction();
         tx.begin();
-
-        pm.makePersistent(o);
-
+        pm.makePersistent(objectToSave);
         tx.commit();
     }
 

@@ -11,15 +11,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class EntityController {
 
+    private static final String DEFAULT_PACKAGE = "org.motechproject";
+
     @Autowired
     private EntityService entityService;
 
 
-    @RequestMapping(value = "/create/{className}/{fieldName}", method = RequestMethod.GET)
+    @RequestMapping(value = "/entity/create/{className}/{fieldName}", method = RequestMethod.GET)
     @ResponseBody
     public String createEntity(@PathVariable String className, @PathVariable String fieldName) {
         try {
-            entityService.createEntity(className, fieldName);
+            entityService.createEntity(addDefaultPackageIfNoneExists(className), fieldName);
         } catch (Exception e) {
             e.printStackTrace();
             return e.getMessage();
@@ -27,10 +29,14 @@ public class EntityController {
         return "Created " + className + " with field " + fieldName;
     }
 
-    @RequestMapping(value = "/status", method = RequestMethod.GET)
+    @RequestMapping(value = "/class/status", method = RequestMethod.GET)
     @ResponseBody
     public String status() {
-        return "jdo - ok";
+        return "Entity - ok";
+    }
+
+    private String addDefaultPackageIfNoneExists(String className) {
+        return className.contains(".") ? className : String.format("%s.%s", DEFAULT_PACKAGE, className);
     }
 
 }

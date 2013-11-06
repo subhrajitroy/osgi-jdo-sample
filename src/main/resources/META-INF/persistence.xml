@@ -5,7 +5,7 @@
     version="1.0">
 
     <persistence-unit name="PU">
-        <class>org.datanucleus.samples.jpa.osgi.Person</class>
+        <class>org.datanucleus.samples.jpa.osgi.domain.Patient</class>
         <exclude-unlisted-classes />
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/motech"/>
