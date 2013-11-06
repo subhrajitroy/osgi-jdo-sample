@@ -1,4 +1,4 @@
-package org.datanucleus.samples.jpa.osgi;
+package org.datanucleus.samples.jpa.osgi.factory;
 
 import javax.jdo.metadata.JDOMetadata;
 

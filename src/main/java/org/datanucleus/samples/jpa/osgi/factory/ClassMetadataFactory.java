@@ -1,4 +1,4 @@
-package org.datanucleus.samples.jpa.osgi;
+package org.datanucleus.samples.jpa.osgi.factory;
 
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.NullValue;
@@ -8,7 +8,7 @@ import javax.jdo.metadata.FieldMetadata;
 import javax.jdo.metadata.JDOMetadata;
 import javax.jdo.metadata.PackageMetadata;
 
-class ClassMetadataFactory implements MetadataFactory {
+public class ClassMetadataFactory implements MetadataFactory {
 
     public JDOMetadata populate(JDOMetadata md, String fullyQualifiedClassName, String fieldName) {
         String packageName = fullyQualifiedClassName.substring(0, fullyQualifiedClassName.lastIndexOf("."));

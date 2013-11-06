@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd57c13d-e6f6-40de-930d-9435b4c56aec" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/PublisherMetadataFactory.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/PatientMetadaFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/EntityController.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/EntityController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/ClassMetadataFactory.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/ClassMetadataFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/MetadataFactory.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/MetadataFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/PatientMetadaFactory.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/PatientMetadaFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JpaMain.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JpaMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Patient.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Patient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample-jpa-osgi.iws" afterPath="$PROJECT_DIR$/sample-jpa-osgi.iws" />
     </list>
     <ignored path="sample-jpa-osgi.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383652198998" ignored="false" />
+    <file path="/Dummy.txt" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383652198952" ignored="false" />
     <file path="/pom.xml" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383729778450" ignored="false" />
     <file path="$PROJECT_DIR$/../../motech/platform-core/platform/server/src/main/resources/osgi.properties" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383030317294" ignored="false" />
-    <file path="/JpaMain.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383653718044" ignored="false" />
+    <file path="/JpaMain.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383653718045" ignored="false" />
     <file path="/module.xml" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383632984423" ignored="false" />
     <file path="/a.dummy" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383650270749" ignored="false" />
     <file path="/persistence.xml" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383046823298" ignored="false" />
@@ -41,12 +41,12 @@
     <file path="/EntityService.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383743825939" ignored="false" />
     <file path="/MetadataFactory.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383657443095" ignored="false" />
     <file path="/BookMetadataFactory.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383657512497" ignored="false" />
-    <file path="/PublisherMetadataFactory.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383741857392" ignored="false" />
+    <file path="/PublisherMetadataFactory.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383741857393" ignored="false" />
     <file path="/Book.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383731754313" ignored="false" />
     <file path="/BooksController.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383730859208" ignored="false" />
     <file path="/PersistenceManagerFactoryFactory.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383731005502" ignored="false" />
     <file path="/Person.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383732529479" ignored="false" />
-    <file path="/README.md" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383735609879" ignored="false" />
+    <file path="/README.md" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383748266672" ignored="false" />
     <file path="/Patient.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383743941727" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -235,6 +235,21 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java" line="85" class="org.datanucleus.samples.jpa.osgi.JdoMain" package="org.datanucleus.samples.jpa.osgi">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -248,7 +263,7 @@
       <file leaf-file-name="EntityService.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="24" selection-start="8280" selection-end="8280" vertical-scroll-proportion="0.70119524">
+            <state line="40" column="0" selection-start="1401" selection-end="1401" vertical-scroll-proportion="-0.9126984">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -256,19 +271,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PatientMetadaFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/PatientMetadaFactory.java">
+      <file leaf-file-name="ClassMetadataFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/ClassMetadataFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="63" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassPool.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/javassist/com.springsource.javassist/3.15.0.GA/com.springsource.javassist-3.15.0.GA-sources.jar!/javassist/ClassPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="28" selection-start="5366" selection-end="5366" vertical-scroll-proportion="0.0">
+            <state line="23" column="19" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -277,10 +283,17 @@
       <file leaf-file-name="Patient.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Patient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="47" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="9" column="13" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdoClassLoader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JdoClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="11" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -288,38 +301,44 @@
       <file leaf-file-name="EntityController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/EntityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="24" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
+            <state line="23" column="32" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassMetadataFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/ClassMetadataFactory.java">
+      <file leaf-file-name="MotechJDOEnhancer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/enhancer/MotechJDOEnhancer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
+            <state line="8" column="11" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MetadataFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/MetadataFactory.java">
+      <file leaf-file-name="datanucleus.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/datanucleus.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="16" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+            <state line="1" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JDOEnhancer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo-api/3.0.1/jdo-api-3.0.1-sources.jar!/javax/jdo/JDOEnhancer.java">
+      <file leaf-file-name="plugin.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="9" selection-start="5363" selection-end="5363" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#5674#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="2" column="58" selection-start="145" selection-end="165" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OSGiPluginRegistry.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/3.2.8/datanucleus-core-3.2.8-sources.jar!/org/datanucleus/plugin/OSGiPluginRegistry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="49" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -327,11 +346,8 @@
       <file leaf-file-name="JDOEnhancer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-api-jdo/3.2.4/datanucleus-api-jdo-3.2.4-sources.jar!/org/datanucleus/api/jdo/JDOEnhancer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="16" selection-start="2066" selection-end="2066" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="33" column="13" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -354,22 +370,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/builder/exception/ClassBuilduerException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/builder/exception/ClassBuilderException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/builder/ClassBuilderException.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/datanucleus/samples/jpa/osgi/builder/FieldTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/builder/Field.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/builder/ClassBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JpaMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JdoMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/MetadataFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/BookMetadataFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/ClassMetadataFactory.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/PersistenceManagerFactoryFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/plugin.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/services/javax.jdo.JDOEnhancer" />
+        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/enhancer/MotechJDOEnhancer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/module.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/BooksController.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/PublisherMetadataFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/EntityController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/datanucleus.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JdoMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Patient.java" />
       </list>
     </option>
   </component>
@@ -421,6 +437,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -431,46 +448,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jpa-osgi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.jboss.javassist:com.springsource.javassist:3.15.0.GA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.springsource.javassist-3.15.0.GA.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jpa-osgi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.jboss.javassist:com.springsource.javassist:3.15.0.GA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.springsource.javassist-3.15.0.GA.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javassist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -843,32 +820,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: javax.jdo:jdo-api:3.0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdo-api-3.0.1.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jpa-osgi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="&lt; 1.7 &gt;" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
@@ -1161,43 +1112,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="factory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jpa-osgi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample-jpa-osgi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="osgi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
+              <option name="myItemId" value="enhancer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1210,40 +1130,41 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="Errors" />
     <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="org.datanucleus.samples.jpa.osgi.builder" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.datanucleus.samples.jpa.osgi.builder" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.datanucleus.samples.jpa.osgi.builder" />
       <recent name="org.datanucleus.samples.jpa.osgi" />
     </key>
   </component>
-  <component name="RunManager" selected="Remote.localhost:8090">
-    <configuration default="false" name="EntityService" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.JdoMain">
+    <configuration default="false" name="JdoMain" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="org.datanucleus.samples.jpa.osgi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="org.datanucleus.samples.jpa.osgi.EntityService" />
+      <option name="MAIN_CLASS_NAME" value="org.datanucleus.samples.jpa.osgi.JdoMain" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1362,19 +1283,6 @@
       <option name="PORT" value="8000" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1401,6 +1309,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1455,14 +1376,14 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Remote.localhost:8090" />
-      <item index="1" class="java.lang.String" itemvalue="Application.EntityService" />
+      <item index="1" class="java.lang.String" itemvalue="Application.JdoMain" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.ConstructorBuilderTest.shouldBuildConstructorStringRepresentation" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.FieldTest.shouldReturnExpectedFieldRepresentation" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.FieldTest.shouldReturnExpectedFieldRepresentationWithAccessModifier" />
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.EntityService" />
+        <item index="0" class="java.lang.String" itemvalue="Application.JdoMain" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.FieldTest.shouldReturnExpectedFieldRepresentationWithAccessModifier" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.ConstructorBuilderTest.shouldBuildConstructorStringRepresentation" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.FieldTest.shouldReturnExpectedFieldRepresentation" />
@@ -1497,19 +1418,19 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864138" sideWeight="0.6" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28335375" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21603428" sideWeight="0.6707317" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1578,126 +1499,112 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/security/AccessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="266" column="31" selection-start="9241" selection-end="9241" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo-api/3.0.1/jdo-api-3.0.1-sources.jar!/javax/jdo/JDOEnhancer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="17" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo-api/3.0.1/jdo-api-3.0.1-sources.jar!/javax/jdo/JDOHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1842" column="21" selection-start="76330" selection-end="76330" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/module.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
+        <state line="23" column="58" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/PersistenceManagerFactoryFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="37" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="50" selection-start="569" selection-end="595" vertical-scroll-proportion="-8.076923">
+        <state line="16" column="21" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JpaMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
+        <state line="32" column="13" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/BooksController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="32" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo-api/3.0.1/jdo-api-3.0.1-sources.jar!/javax/jdo/JDOEnhancer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="9" selection-start="5363" selection-end="5363" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#5674#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-api-jdo/3.2.4/datanucleus-api-jdo-3.2.4-sources.jar!/org/datanucleus/api/jdo/JDOEnhancer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="16" selection-start="2066" selection-end="2066" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/ClassMetadataFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
+        <state line="33" column="13" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/MetadataFactory.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/3.2.8/datanucleus-core-3.2.8-sources.jar!/org/datanucleus/plugin/OSGiPluginRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+        <state line="45" column="49" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/PatientMetadaFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="63" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0">
+        <state line="2" column="58" selection-start="145" selection-end="165" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/datanucleus.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/EntityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="24" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
+        <state line="23" column="32" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/javassist/com.springsource.javassist/3.15.0.GA/com.springsource.javassist-3.15.0.GA.jar!/javassist/ClassPool.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/enhancer/MotechJDOEnhancer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="31" selection-start="5087" selection-end="5087" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/javassist/com.springsource.javassist/3.15.0.GA/com.springsource.javassist-3.15.0.GA-sources.jar!/javassist/ClassPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="28" selection-start="5366" selection-end="5366" vertical-scroll-proportion="0.0">
+        <state line="8" column="11" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Patient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="47" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="9" column="13" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/ClassMetadataFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JdoClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="11" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="24" selection-start="8280" selection-end="8280" vertical-scroll-proportion="0.70119524">
+        <state line="40" column="0" selection-start="1401" selection-end="1401" vertical-scroll-proportion="-0.9126984">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
