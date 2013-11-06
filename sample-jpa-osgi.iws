@@ -333,7 +333,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="49" selection-start="953" selection-end="953" vertical-scroll-proportion="0.42912874">
+            <state line="23" column="0" selection-start="905" selection-end="905" vertical-scroll-proportion="0.4486346">
               <folding />
             </state>
           </provider>
@@ -1665,7 +1665,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="49" selection-start="953" selection-end="953" vertical-scroll-proportion="0.42912874">
+        <state line="23" column="0" selection-start="905" selection-end="905" vertical-scroll-proportion="0.4486346">
           <folding />
         </state>
       </provider>

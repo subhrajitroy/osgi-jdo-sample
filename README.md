@@ -20,4 +20,5 @@ References
 =================
 
 I have taken help and code from multiple sources.
-1) https://github.com/datanucleus/sample-jpa-osgi
+
+1. https://github.com/datanucleus/sample-jpa-osgi
