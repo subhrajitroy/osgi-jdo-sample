@@ -69,7 +69,7 @@ public class JpaMain {
             tx.begin();
             Patient p;
             for (int i = 0; i < MAX_NUM_ITERATIONS; i++) {
-                p = new Patient(i, "Name" + i, "Address" + i, 20 + i);
+                p = new Patient(i, "Name" + i, 20 + i);
                 em.persist(p);
             }
             tx.commit();

@@ -17,16 +17,19 @@ public class Patient implements Serializable {
     private String name;
 
     @Persistent
-    private String address;
-
-    @Persistent
     private long age;
 
-    public Patient(long id, String name, String address, long age) {
+    public Patient() {
+    }
+
+    public Patient(String name) {
+        this.name = name;
+    }
+
+    public Patient(long id, String name, long age) {
         super();
         this.id = id;
         this.name = name;
-        this.address = address;
         this.age = age;
     }
 
@@ -46,13 +49,6 @@ public class Patient implements Serializable {
         this.name = name;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setStudentAdd(String address) {
-        this.address = address;
-    }
 
     public long getAge() {
         return age;
@@ -60,5 +56,10 @@ public class Patient implements Serializable {
 
     public void setAge(long age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Id = " + id + " Name = " + name;
     }
 }

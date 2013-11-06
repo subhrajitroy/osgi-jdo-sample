@@ -1,6 +1,7 @@
 package org.datanucleus.samples.jpa.osgi;
 
 import javassist.CannotCompileException;
+import javassist.ClassClassPath;
 import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtField;
@@ -8,6 +9,7 @@ import javassist.CtNewConstructor;
 import javassist.NotFoundException;
 import org.datanucleus.samples.jpa.osgi.builder.ClassBuilder;
 import org.datanucleus.samples.jpa.osgi.builder.Field;
+import org.datanucleus.samples.jpa.osgi.domain.Patient;
 import org.datanucleus.samples.jpa.osgi.enhancer.MotechJDOEnhancer;
 import org.datanucleus.samples.jpa.osgi.factory.PersistenceManagerFactoryFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,28 +35,41 @@ public class EntityService {
     @Autowired
     private PersistenceManagerFactoryFactory persistenceManagerFactoryFactory;
 
-    public static void main(String[] args) throws Exception {
-        // define extension class for Publisher dynamically
-        //byte[] publisherBytes = definePublisherExt(enhanceCl);
-        // define jdo metadata for Publisher Extension programatically
-        //PublisherMetadataFactory publisherMdf = new PublisherMetadataFactory();
-        // enchance PublisherExt at runtime (Publisher is enhanced at compile time)
-        //byte[] enhancedPublisherBytes = enhance("fuu.PublisherExt", publisherBytes, publisherMdf, enhanceCl);
-        // define enhanced PublisherExt in new classloader
-        //persistCl.defineClass("fuu.PublisherExt", enhancedPublisherBytes);
-        // register Book metadata with Book
-        //register(pmf, publisherMdf, "fuu.PublisherExt");
 
-        // sample Publisher insert with extension
-        //Class publisherExt = persistCl.loadClass("fuu.PublisherExt");
-        //Object publisher = publisherExt.getDeclaredConstructor(String.class, String.class).newInstance("scholastic", "print");
-        //insert(pmf, publisher);
+    public void extendExistingEntity() throws Exception {
+        //        define extension class for Publisher dynamically
 
-        // sample Publisher insert
-//        insert(pmf, new Publisher("pearson"));
+        ClassLoader oldContextClassLoader = Thread.currentThread().getContextClassLoader();
+        Thread.currentThread().setContextClassLoader(EntityService.class.getClassLoader());
+
+        JdoClassLoader classLoaderForEnhancer = new JdoClassLoader(getClassLoader());
+        JdoClassLoader classLoaderForPersistence = new JdoClassLoader(getClassLoader());
+
+        byte[] publisherBytes = definePatientExtension(classLoaderForEnhancer);
+//        define jdo metadata for Publisher Extension programatically
+        PatientMetadaFactory patientMetadataFactory = new PatientMetadaFactory();
+//        enchance PublisherExt at runtime (Publisher is enhanced at compile time)
+        byte[] enhancedPublisherBytes = enhance("org.motechproject.MotechPatient", "format", publisherBytes, patientMetadataFactory, classLoaderForEnhancer);
+//        define enhanced PublisherExt in new classloader
+        classLoaderForPersistence.defineClass("org.motechproject.MotechPatient", enhancedPublisherBytes);
+//        register Book metadata with Book
+
+        PersistenceManagerFactory persistenceManagerFactory = persistenceManagerFactoryFactory.getPersistenceManagerFactory(classLoaderForPersistence);
+
+        persistenceManagerFactory.registerMetadata(patientMetadataFactory.populate(persistenceManagerFactory.newMetadata(), "org.motechproject.MotechPatient", "format"));
+
+//        sample Publisher insert with extension
+        Class motechPatientClass = classLoaderForPersistence.loadClass("org.motechproject.MotechPatient");
+        Object publisher = motechPatientClass.getDeclaredConstructor(String.class, String.class).newInstance("scholastic", "print");
+        insertIntoDb(persistenceManagerFactory, publisher);
+
+//        sample Publisher insert
+        insertIntoDb(persistenceManagerFactory, new Patient("John"));
+
+        Thread.currentThread().setContextClassLoader(oldContextClassLoader);
 
         // get all Publishers including extensions
-//        printAll(pmf, Publisher.class);
+        printAll(persistenceManagerFactory, Patient.class);
     }
 
 
@@ -117,18 +132,18 @@ public class EntityService {
         return classBuilder.build();
     }
 
-    private static byte[] definePublisherExt(JdoClassLoader classLoader) throws NotFoundException, CannotCompileException, IOException {
+    private static byte[] definePatientExtension(JdoClassLoader classLoader) throws NotFoundException, CannotCompileException, IOException {
         ClassPool pool = ClassPool.getDefault();
-//        pool.insertClassPath(new ClassClassPath(Publisher.class));
-        CtClass cc = pool.makeClass("fuu.PublisherExt");
-        cc.setSuperclass(pool.get("foo.Publisher"));
+        pool.insertClassPath(new ClassClassPath(Patient.class));
+        CtClass cc = pool.makeClass("org.motechproject.MotechPatient");
+        cc.setSuperclass(pool.get(Patient.class.getName()));
 
         cc.addField(CtField.make("private java.lang.String format;", cc));
 
-        cc.addConstructor(CtNewConstructor.make("public PublisherExt(java.lang.String name, java.lang.String format) { super(name); this.format=format; }", cc));
+        cc.addConstructor(CtNewConstructor.make("public MotechPatient(java.lang.String name, java.lang.String format) { super(name); this.format=format; }", cc));
 
         byte[] classBytes = cc.toBytecode();
-        classLoader.defineClass("fuu.PublisherExt", classBytes);
+        classLoader.defineClass("org.motechproject.MotechPatient", classBytes);
         return classBytes;
     }
 

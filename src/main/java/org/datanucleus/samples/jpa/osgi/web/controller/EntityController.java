@@ -29,7 +29,15 @@ public class EntityController {
         return "Created " + className + " with field " + fieldName;
     }
 
-    @RequestMapping(value = "/class/status", method = RequestMethod.GET)
+    @RequestMapping(value = "/entity/extend", method = RequestMethod.GET)
+    @ResponseBody
+    public String extend() throws Exception {
+        entityService.extendExistingEntity();
+        return "Extended";
+    }
+
+
+    @RequestMapping(value = "/entity/status", method = RequestMethod.GET)
     @ResponseBody
     public String status() {
         return "Entity - ok";
