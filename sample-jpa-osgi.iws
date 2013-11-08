@@ -2,30 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd57c13d-e6f6-40de-930d-9435b4c56aec" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/ClassMetadataFactory.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/ClassMetadataFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/MetadataFactory.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/MetadataFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/PatientMetadaFactory.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/PatientMetadaFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/repository/Books.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/ClassExtensionProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/exception/PersistenceException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/BooksController.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/BooksController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JdoClassLoader.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JdoClassLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/PersistenceManagerFactoryFactory.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/PersistenceManagerFactoryFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/datanucleus.properties" afterPath="$PROJECT_DIR$/src/main/resources/datanucleus.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring/module.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring/module.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample-jpa-osgi.iml" afterPath="$PROJECT_DIR$/sample-jpa-osgi.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample-jpa-osgi.ipr" afterPath="$PROJECT_DIR$/sample-jpa-osgi.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample-jpa-osgi.iws" afterPath="$PROJECT_DIR$/sample-jpa-osgi.iws" />
     </list>
     <ignored path="sample-jpa-osgi.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383652198952" ignored="false" />
-    <file path="/pom.xml" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383729778450" ignored="false" />
+    <file path="/Dummy.txt" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383758395478" ignored="false" />
+    <file path="/pom.xml" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383836982261" ignored="false" />
     <file path="$PROJECT_DIR$/../../motech/platform-core/platform/server/src/main/resources/osgi.properties" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383030317294" ignored="false" />
     <file path="/JpaMain.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383653718045" ignored="false" />
-    <file path="/module.xml" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383632984423" ignored="false" />
-    <file path="/a.dummy" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383650270749" ignored="false" />
+    <file path="/module.xml" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383919953368" ignored="false" />
+    <file path="/a.dummy" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383836360637" ignored="false" />
     <file path="/persistence.xml" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383046823298" ignored="false" />
     <file path="$PROJECT_DIR$/../../motech/platform-core/packaging/deb/pom.xml" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383053055551" ignored="false" />
     <file path="$PROJECT_DIR$/../../motech/platform-core/platform/server-config/src/main/java/org/motechproject/config/service/ConfigurationService.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383053055551" ignored="false" />
     <file path="$PROJECT_DIR$/../../motech/platform-core/packaging/rpm/pom.xml" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383053055551" ignored="false" />
     <file path="/EntityBuilder.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383136677230" ignored="false" />
-    <file path="/JdoClassLoader.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383136651266" ignored="false" />
+    <file path="/JdoClassLoader.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383827944763" ignored="false" />
     <file path="/JdoMain.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383658047634" ignored="false" />
-    <file path="/fragment.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383729164430" ignored="false" />
-    <file path="/datanucleus.properties" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383137771428" ignored="false" />
+    <file path="/fragment.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383919523945" ignored="false" />
+    <file path="/datanucleus.properties" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383903828702" ignored="false" />
     <file path="/ConstructorBuilderTest.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383198353919" ignored="false" />
     <file path="/Field.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383201323311" ignored="false" />
     <file path="/ConstructorBuilder.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383198635024" ignored="false" />
@@ -38,16 +46,20 @@
     <file path="/EntityController.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383742199495" ignored="false" />
     <file path="$PROJECT_DIR$/../../foo/src/main/java/Main.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383638516790" ignored="false" />
     <file path="/Main.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383638345491" ignored="false" />
-    <file path="/EntityService.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383743825939" ignored="false" />
+    <file path="/EntityService.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383919584483" ignored="false" />
     <file path="/MetadataFactory.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383657443095" ignored="false" />
     <file path="/BookMetadataFactory.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383657512497" ignored="false" />
     <file path="/PublisherMetadataFactory.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383741857393" ignored="false" />
     <file path="/Book.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383731754313" ignored="false" />
-    <file path="/BooksController.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383730859208" ignored="false" />
-    <file path="/PersistenceManagerFactoryFactory.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383731005502" ignored="false" />
+    <file path="/BooksController.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383820201234" ignored="false" />
+    <file path="/PersistenceManagerFactoryFactory.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383901230550" ignored="false" />
     <file path="/Person.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383732529479" ignored="false" />
     <file path="/README.md" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383748266672" ignored="false" />
     <file path="/Patient.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383743941727" ignored="false" />
+    <file path="/ClassExtensionProvider.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383807751826" ignored="false" />
+    <file path="/MotechJDOPersistenceManagerFactory.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383819632868" ignored="false" />
+    <file path="/Books.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383836176795" ignored="false" />
+    <file path="/PersistenceException.java" changelist="cd57c13d-e6f6-40de-930d-9435b4c56aec" time="1383891198505" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +142,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-api-jdo/3.2.4/datanucleus-api-jdo-3.2.4-sources.jar!/org/datanucleus/api/jdo/JDOPersistenceManagerFactory.java" line="408" class="org.datanucleus.api.jdo.JDOPersistenceManagerFactory" package="org.datanucleus.api.jdo">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/EntityController.java" line="23" class="org.datanucleus.samples.jpa.osgi.web.controller.EntityController" package="org.datanucleus.samples.jpa.osgi.web.controller">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -145,7 +157,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/3.2.8/datanucleus-core-3.2.8-sources.jar!/org/datanucleus/NucleusContext.java" line="278" class="org.datanucleus.NucleusContext" package="org.datanucleus">
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/JdoTransactionManager.java" line="263" class="org.springframework.orm.jdo.JdoTransactionManager" package="org.springframework.orm.jdo">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -160,7 +172,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/3.2.8/datanucleus-core-3.2.8-sources.jar!/org/datanucleus/plugin/PluginManager.java" line="401" class="org.datanucleus.plugin.PluginManager" package="org.datanucleus.plugin">
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/JdoTransactionManager.java" line="292" class="org.springframework.orm.jdo.JdoTransactionManager" package="org.springframework.orm.jdo">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -175,7 +187,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/3.2.8/datanucleus-core-3.2.8-sources.jar!/org/datanucleus/NucleusContext.java" line="268" class="org.datanucleus.NucleusContext" package="org.datanucleus">
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/JdoTransactionManager.java" line="429" class="org.springframework.orm.jdo.JdoTransactionManager" package="org.springframework.orm.jdo">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -190,7 +202,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/3.2.8/datanucleus-core-3.2.8-sources.jar!/org/datanucleus/plugin/PluginManager.java" line="90" class="org.datanucleus.plugin.PluginManager" package="org.datanucleus.plugin">
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/JdoTransactionManager.java" line="446" class="org.springframework.orm.jdo.JdoTransactionManager" package="org.springframework.orm.jdo">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -205,7 +217,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/3.2.8/datanucleus-core-3.2.8-sources.jar!/org/datanucleus/plugin/PluginManager.java" line="410" class="org.datanucleus.plugin.PluginManager" package="org.datanucleus.plugin">
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/JdoTransactionManager.java" line="464" class="org.springframework.orm.jdo.JdoTransactionManager" package="org.springframework.orm.jdo">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -220,7 +232,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/3.2.8/datanucleus-core-3.2.8-sources.jar!/org/datanucleus/plugin/PluginRegistryFactory.java" line="90" class="org.datanucleus.plugin.PluginRegistryFactory" package="org.datanucleus.plugin">
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/JdoTransactionManager.java" line="474" class="org.springframework.orm.jdo.JdoTransactionManager" package="org.springframework.orm.jdo">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -235,7 +247,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java" line="85" class="org.datanucleus.samples.jpa.osgi.JdoMain" package="org.datanucleus.samples.jpa.osgi">
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/JdoTransactionManager.java" line="141" class="org.springframework.orm.jdo.JdoTransactionManager" package="org.springframework.orm.jdo">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -260,10 +272,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EntityService.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java">
+      <file leaf-file-name="EntityServiceImpl.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1401" selection-end="1401" vertical-scroll-proportion="-0.9126984">
+            <state line="109" column="8" selection-start="5612" selection-end="5612" vertical-scroll-proportion="-0.09126984">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -271,28 +283,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassMetadataFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/ClassMetadataFactory.java">
+      <file leaf-file-name="EntityService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="19" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
+            <state line="12" column="18" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Patient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Patient.java">
+      <file leaf-file-name="Transactional.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.transaction/3.1.0.RELEASE/org.springframework.transaction-3.1.0.RELEASE-sources.jar!/org/springframework/transaction/annotation/Transactional.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+            <state line="54" column="18" selection-start="2294" selection-end="2294" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JdoClassLoader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JdoClassLoader.java">
+      <file leaf-file-name="Propagation.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.transaction/3.1.0.RELEASE/org.springframework.transaction-3.1.0.RELEASE-sources.jar!/org/springframework/transaction/annotation/Propagation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="11" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+            <state line="36" column="4" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -301,16 +313,45 @@
       <file leaf-file-name="EntityController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/EntityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="32" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0">
+            <state line="16" column="24" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/module.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="18" selection-start="1721" selection-end="1721" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MotechJDOEnhancer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/enhancer/MotechJDOEnhancer.java">
+      <file leaf-file-name="JdoTemplate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/JdoTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="11" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+            <state line="96" column="13" selection-start="4730" selection-end="4730" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringPersistenceManagerProxyBean.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/support/SpringPersistenceManagerProxyBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="38" selection-start="2957" selection-end="2982" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionAwarePersistenceManagerFactoryProxy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/TransactionAwarePersistenceManagerFactoryProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="110" column="16" selection-start="5116" selection-end="5116" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -319,34 +360,7 @@
       <file leaf-file-name="datanucleus.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/datanucleus.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="58" selection-start="145" selection-end="165" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OSGiPluginRegistry.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/3.2.8/datanucleus-core-3.2.8-sources.jar!/org/datanucleus/plugin/OSGiPluginRegistry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="49" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JDOEnhancer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-api-jdo/3.2.4/datanucleus-api-jdo-3.2.4-sources.jar!/org/datanucleus/api/jdo/JDOEnhancer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="13" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.0">
+            <state line="6" column="44" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -370,9 +384,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/builder/exception/ClassBuilduerException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/builder/exception/ClassBuilderException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/builder/ClassBuilderException.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/datanucleus/samples/jpa/osgi/builder/FieldTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/builder/Field.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/builder/ClassBuilder.java" />
@@ -380,12 +391,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/plugin.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/services/javax.jdo.JDOEnhancer" />
         <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/enhancer/MotechJDOEnhancer.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/module.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/EntityController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/datanucleus.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JdoMain.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/exception/PersistenceException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/PersistenceManagerFactoryFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/datanucleus.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/EntityController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/module.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -448,6 +462,208 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample-jpa-osgi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.springframework:spring-aop:3.2.4.RELEASE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-aop-3.2.4.RELEASE.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample-jpa-osgi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.springframework:spring-aop:3.2.4.RELEASE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-aop-3.2.4.RELEASE.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample-jpa-osgi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.springframework:org.springframework.transaction:3.1.0.RELEASE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.springframework.transaction-3.1.0.RELEASE.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample-jpa-osgi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.springframework:org.springframework.transaction:3.1.0.RELEASE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.springframework.transaction-3.1.0.RELEASE.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transaction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample-jpa-osgi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.springframework:org.springframework.transaction:3.1.0.RELEASE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.springframework.transaction-3.1.0.RELEASE.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transaction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="annotation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample-jpa-osgi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.springframework:org.springframework.transaction:3.1.0.RELEASE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.springframework.transaction-3.1.0.RELEASE.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample-jpa-osgi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.springframework:org.springframework.orm:3.1.0.RELEASE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.springframework.orm-3.1.0.RELEASE.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample-jpa-osgi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.springframework:org.springframework.orm:3.1.0.RELEASE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.springframework.orm-3.1.0.RELEASE.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample-jpa-osgi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.springframework:org.springframework.orm:3.1.0.RELEASE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.springframework.orm-3.1.0.RELEASE.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -805,10 +1021,6 @@
               <option name="myItemId" value="jdo-api-3.0.1.jar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1112,7 +1324,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="enhancer" />
+              <option name="myItemId" value="exception" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1145,18 +1357,21 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.datanucleus.samples.jpa.osgi.builder" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="org.datanucleus.samples.jpa.osgi.builder" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.datanucleus.samples.jpa.osgi" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.datanucleus.samples.jpa.osgi.builder" />
       <recent name="org.datanucleus.samples.jpa.osgi" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JdoMain">
+  <component name="RunManager" selected="Remote.localhost:8090">
     <configuration default="false" name="JdoMain" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1410,9 +1625,10 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.68414634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1424,12 +1640,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864138" sideWeight="0.6" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21603428" sideWeight="0.6707317" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3108935" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1499,112 +1714,119 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/security/AccessController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/3.2.8/datanucleus-core-3.2.8-sources.jar!/org/datanucleus/TransactionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="266" column="31" selection-start="9241" selection-end="9241" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo-api/3.0.1/jdo-api-3.0.1-sources.jar!/javax/jdo/JDOEnhancer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="17" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
+        <state line="483" column="0" selection-start="15719" selection-end="15719" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo-api/3.0.1/jdo-api-3.0.1-sources.jar!/javax/jdo/JDOHelper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-api-jdo/3.2.4/datanucleus-api-jdo-3.2.4-sources.jar!/org/datanucleus/api/jdo/JDOTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1842" column="21" selection-start="76330" selection-end="76330" vertical-scroll-proportion="0.0">
+        <state line="187" column="0" selection-start="6979" selection-end="6979" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/module.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/JdoTransactionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="58" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0">
+        <state line="507" column="0" selection-start="21523" selection-end="21523" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#24573#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.transaction/3.1.0.RELEASE/org.springframework.transaction-3.1.0.RELEASE-sources.jar!/org/springframework/transaction/support/AbstractPlatformTransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="822" column="0" selection-start="34722" selection-end="34722" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.transaction/3.1.0.RELEASE/org.springframework.transaction-3.1.0.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
+        <state line="447" column="0" selection-start="18046" selection-end="18046" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JpaMain.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.transaction/3.1.0.RELEASE/org.springframework.transaction-3.1.0.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="13" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-api-jdo/3.2.4/datanucleus-api-jdo-3.2.4-sources.jar!/org/datanucleus/api/jdo/JDOEnhancer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="13" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/3.2.8/datanucleus-core-3.2.8-sources.jar!/org/datanucleus/plugin/OSGiPluginRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="49" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="58" selection-start="145" selection-end="165" vertical-scroll-proportion="0.0">
+        <state line="114" column="0" selection-start="4839" selection-end="4839" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/datanucleus.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
+        <state line="6" column="44" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/TransactionAwarePersistenceManagerFactoryProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="16" selection-start="5116" selection-end="5116" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/support/SpringPersistenceManagerProxyBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="38" selection-start="2957" selection-end="2982" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/JdoTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="13" selection-start="4730" selection-end="4730" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.transaction/3.1.0.RELEASE/org.springframework.transaction-3.1.0.RELEASE-sources.jar!/org/springframework/transaction/annotation/Propagation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="4" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.transaction/3.1.0.RELEASE/org.springframework.transaction-3.1.0.RELEASE-sources.jar!/org/springframework/transaction/annotation/Transactional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="18" selection-start="2294" selection-end="2294" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/EntityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="32" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/enhancer/MotechJDOEnhancer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Patient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/ClassMetadataFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="19" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/JdoClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="16" column="24" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1401" selection-end="1401" vertical-scroll-proportion="-0.9126984">
+        <state line="12" column="18" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/module.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="18" selection-start="1721" selection-end="1721" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="8" selection-start="5612" selection-end="5612" vertical-scroll-proportion="-0.09126984">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
