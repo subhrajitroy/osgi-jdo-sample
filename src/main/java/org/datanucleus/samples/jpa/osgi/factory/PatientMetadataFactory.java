@@ -1,5 +1,7 @@
 package org.datanucleus.samples.jpa.osgi.factory;
 
+import org.springframework.stereotype.Component;
+
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.InheritanceStrategy;
@@ -10,7 +12,8 @@ import javax.jdo.metadata.FieldMetadata;
 import javax.jdo.metadata.JDOMetadata;
 import javax.jdo.metadata.PackageMetadata;
 
-public class PatientMetadaFactory implements MetadataFactory {
+@Component
+public class PatientMetadataFactory implements MetadataFactory {
 
     public JDOMetadata populate(JDOMetadata md, String fullyQualifiedClassName, String fieldName) {
         PackageMetadata pmd = md.newPackageMetadata(fullyQualifiedClassName.substring(0, fullyQualifiedClassName.lastIndexOf(".")));

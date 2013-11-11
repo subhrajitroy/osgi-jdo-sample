@@ -8,5 +8,6 @@ public class MotechJDOEnhancer extends JDOEnhancer {
 
     public MotechJDOEnhancer(Properties props) {
         super(props);
+        setVerbose(true);
     }
 }

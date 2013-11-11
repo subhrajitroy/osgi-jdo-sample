@@ -3,7 +3,6 @@ package org.datanucleus.samples.jpa.osgi.repository;
 import org.datanucleus.samples.jpa.osgi.domain.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.orm.jdo.LocalPersistenceManagerFactoryBean;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,8 +13,8 @@ import javax.jdo.PersistenceManagerFactory;
 public class Books {
 
     @Autowired
-    @Qualifier("persistenceManagerFactoryBean")
-    private LocalPersistenceManagerFactoryBean persistenceManagerFactory;
+    @Qualifier("persistenceManagerFactory")
+    private PersistenceManagerFactory persistenceManagerFactory;
 
 
     @Transactional
@@ -23,11 +22,8 @@ public class Books {
         ClassLoader oldContextClassLoader = Thread.currentThread().getContextClassLoader();
         Thread.currentThread().setContextClassLoader(Books.class.getClassLoader());
 
-        PersistenceManagerFactory persistenceManagerFactory = this.persistenceManagerFactory.getObject();
         PersistenceManager persistenceManager = persistenceManagerFactory.getPersistenceManager();
-
         persistenceManager.makePersistent(book);
-
 
         Thread.currentThread().setContextClassLoader(oldContextClassLoader);
     }

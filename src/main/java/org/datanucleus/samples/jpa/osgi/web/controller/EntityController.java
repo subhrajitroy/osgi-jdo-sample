@@ -29,10 +29,10 @@ public class EntityController {
         return "Created " + className + " with field " + fieldName;
     }
 
-    @RequestMapping(value = "/entity/extend", method = RequestMethod.GET)
+    @RequestMapping(value = "/entity/extend/{className}", method = RequestMethod.GET)
     @ResponseBody
-    public String extend() throws Exception {
-        entityService.extendExistingEntity();
+    public String extend(@PathVariable String className) throws Exception {
+        entityService.extendEntity(className);
         return "Extended";
     }
 

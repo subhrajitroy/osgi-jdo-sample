@@ -8,7 +8,7 @@ import java.lang.reflect.InvocationTargetException;
 
 public interface EntityService {
     @Transactional
-    void extendExistingEntity() throws Exception;
+    void extendEntity(String className) throws Exception;
 
     @Transactional
     void createEntity(String fullyQualifiedClassName, String fieldName) throws IOException, CannotCompileException, ClassNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException;
