@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd57c13d-e6f6-40de-930d-9435b4c56aec" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/PatientMetadataFactory.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/EntityMetadataFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Book.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/repository/Books.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/repository/Books.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/BooksController.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/BooksController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/ClassExtensionProvider.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/ClassExtensionProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/ClassName.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/ClassName.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample-jpa-osgi.iws" afterPath="$PROJECT_DIR$/sample-jpa-osgi.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="sample-jpa-osgi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -228,15 +220,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntityMetadataFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/EntityMetadataFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="89" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EntityController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/web/controller/EntityController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -248,10 +231,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="40" selection-start="5320" selection-end="5320" vertical-scroll-proportion="0.2920592">
+            <state line="26" column="23" selection-start="1037" selection-end="1042" vertical-scroll-proportion="-10.076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="112" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.50715214">
               <folding />
             </state>
           </provider>
@@ -270,7 +262,10 @@
         <entry file="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo-api/3.0.1/jdo-api-3.0.1-sources.jar!/javax/jdo/identity/IntIdentity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="31" column="13" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <element signature="e#0#4126#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -314,7 +309,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/factory/PersistenceManagerFactoryFactory.java" />
         <option value="$PROJECT_DIR$/src/main/resources/datanucleus.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/module.xml" />
@@ -330,6 +324,7 @@
         <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/EntityServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/datanucleus/samples/jpa/osgi/domain/Book.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1794,19 +1789,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.4.RELEASE/spring-aop-3.2.4.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="35" selection-start="2311" selection-end="2311" vertical-scroll-proportion="-25.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.orm/3.1.0.RELEASE/org.springframework.orm-3.1.0.RELEASE-sources.jar!/org/springframework/orm/jdo/JdoTransactionManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="429" column="0" selection-start="18541" selection-end="18541" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#24573#0" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1856,7 +1844,10 @@
     <entry file="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo-api/3.0.1/jdo-api-3.0.1-sources.jar!/javax/jdo/identity/IntIdentity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="13" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#0#4126#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1914,7 +1905,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="40" selection-start="5320" selection-end="5320" vertical-scroll-proportion="0.2920592">
+        <state line="26" column="23" selection-start="1037" selection-end="1042" vertical-scroll-proportion="-10.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="112" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.50715214">
           <folding />
         </state>
       </provider>

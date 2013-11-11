@@ -19,6 +19,12 @@ https://code.google.com/p/motech/
        An instance of this type will be created and saved in the table using JDO.
        JDO will create a table called address to save the instance.
 3. Add field to an existing class and save an instance of the new type.
+       http://localhost:8080/motech-platform/module/jdo/spike/entity/extend/<class-to-extend>
+
+       This will add a field named "format" to the existing class.
+
+       As of now the class-to-extend can be either  book or patient.
+       Datanucleus creates additional tables for the extended classes.In this case motechbook and motechpatient.
 
 
 References
