@@ -8,7 +8,7 @@ import org.datanucleus.samples.jpa.osgi.domain.Patient;
 import org.datanucleus.samples.jpa.osgi.enhancer.MotechJDOEnhancer;
 import org.datanucleus.samples.jpa.osgi.factory.ClassMetadataFactory;
 import org.datanucleus.samples.jpa.osgi.factory.MetadataFactory;
-import org.datanucleus.samples.jpa.osgi.factory.PatientMetadataFactory;
+import org.datanucleus.samples.jpa.osgi.factory.EntityMetadataFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -35,7 +35,7 @@ public class EntityServiceImpl implements EntityService {
 
     //defines jdo metadata for Publisher Extension programatically
     @Autowired
-    private PatientMetadataFactory patientMetadataFactory;
+    private EntityMetadataFactory entityMetadataFactory;
 
 
     private Map<String, Class> classesForExtensionMap = new HashMap<String, Class>();
@@ -60,15 +60,15 @@ public class EntityServiceImpl implements EntityService {
 
         byte[] clazzBytes = ClassExtensionProvider.defineClassExtension(classLoaderForEnhancer, extendedClassName, baseClass);
 
-        byte[] enhancedPatientBytes = enhance(extendedClassName, "format", clazzBytes, patientMetadataFactory, classLoaderForEnhancer);
+        byte[] enhancedPatientBytes = enhance(extendedClassName, "format", clazzBytes, entityMetadataFactory, classLoaderForEnhancer);
         classLoaderForPersistence.defineClass(extendedClassName, enhancedPatientBytes);
-        persistenceManagerFactory.registerMetadata(patientMetadataFactory.populate(persistenceManagerFactory.newMetadata(), extendedClassName, "format"));
+        persistenceManagerFactory.registerMetadata(entityMetadataFactory.populate(persistenceManagerFactory.newMetadata(), extendedClassName, "format"));
         Class extendedClass = classLoaderForPersistence.loadClass(extendedClassName);
         Object extendedClassInstance = extendedClass.getDeclaredConstructor(String.class, String.class).newInstance("scholastic", "print");
         PersistenceManager persistenceManager = persistenceManagerFactory.getPersistenceManager();
         persistenceManager.makePersistent(extendedClassInstance);
-        Thread.currentThread().setContextClassLoader(oldContextClassLoader);
         printAll(persistenceManagerFactory, extendedClass);
+        Thread.currentThread().setContextClassLoader(oldContextClassLoader);
     }
 
     private String generatedExtendedClassName(String className) {
@@ -118,10 +118,10 @@ public class EntityServiceImpl implements EntityService {
     private static byte[] defineClass(JdoClassLoader classLoader, String fullyQualifiedClassName, String fieldName) throws CannotCompileException, IOException {
         ClassName className = new ClassName(fullyQualifiedClassName);
         System.out.println("Package name " + className.getPackageName());
-        System.out.println("Class name " + className.getName());
+        System.out.println("Class name " + className.getSimpleName());
         ClassBuilder classBuilder = new ClassBuilder();
         classBuilder.withClassLoader(classLoader)
-                .withName(className.getName()).inPackage(className.getPackageName()).withField(new Field(fieldName, String.class));
+                .withName(className.getSimpleName()).inPackage(className.getPackageName()).withField(new Field(fieldName, String.class));
         return classBuilder.build();
     }
 

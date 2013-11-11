@@ -23,7 +23,7 @@ public class BooksController {
     public String createBook(@PathVariable String name, @PathVariable String author) throws IOException {
         Book book = new Book(name, author);
         books.save(book);
-        return "Book name " + book.getName() + " by " + book.getAuthor();
+        return "Number of Books " + books.all().size();
     }
 
     @RequestMapping(value = "/book/status", method = RequestMethod.GET)

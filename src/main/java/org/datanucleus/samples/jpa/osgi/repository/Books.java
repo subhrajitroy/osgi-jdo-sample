@@ -8,6 +8,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
+import javax.jdo.Query;
+import java.util.ArrayList;
+import java.util.List;
 
 @Repository
 public class Books {
@@ -26,6 +29,28 @@ public class Books {
         persistenceManager.makePersistent(book);
 
         Thread.currentThread().setContextClassLoader(oldContextClassLoader);
+    }
+
+    @Transactional
+    public List<Book> all() {
+        ClassLoader oldContextClassLoader = Thread.currentThread().getContextClassLoader();
+        Thread.currentThread().setContextClassLoader(Books.class.getClassLoader());
+
+        List<Book> books = new ArrayList<Book>();
+
+        PersistenceManager persistenceManager = persistenceManagerFactory.getPersistenceManager();
+        Query query = persistenceManager.newQuery(Book.class);
+        List booksList = (List) query.execute();
+
+        for (Object obj : booksList) {
+            Book book = (Book) obj;
+            books.add(book);
+        }
+
+        Thread.currentThread().setContextClassLoader(oldContextClassLoader);
+
+        return books;
+
     }
 
 

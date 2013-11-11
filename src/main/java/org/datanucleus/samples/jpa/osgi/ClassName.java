@@ -12,7 +12,7 @@ public class ClassName {
         return lastIndexOfDot > -1 ? fullyQualifiedClassName.substring(0, lastIndexOfDot) : "";
     }
 
-    public String getName() {
+    public String getSimpleName() {
         int lastIndexOfDot = fullyQualifiedClassName.lastIndexOf(".");
         if (lastIndexOfDot == -1) {
             return fullyQualifiedClassName;

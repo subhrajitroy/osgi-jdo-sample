@@ -53,4 +53,9 @@ public class Book {
     public void setId(int id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s by %s ", name, author);
+    }
 }

@@ -23,7 +23,7 @@ public class ClassExtensionProvider {
 
         ClassName className = new ClassName(qualifiedExtendedClassName);
 
-        cc.addConstructor(CtNewConstructor.make(String.format("public %s(java.lang.String name, java.lang.String format) { super(name); this.format=format; }", className.getName()), cc));
+        cc.addConstructor(CtNewConstructor.make(String.format("public %s(java.lang.String name, java.lang.String format) { super(name); this.format=format; }", className.getSimpleName()), cc));
 
         byte[] classBytes = cc.toBytecode();
         classLoader.defineClass(qualifiedExtendedClassName, classBytes);
